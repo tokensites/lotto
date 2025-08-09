@@ -1,1 +1,1235 @@
-wip
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anima App</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+  tailwind.config = {
+  content: [],
+  theme: {
+    extend: {
+      fontFamily: {
+        apple_system: [
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'Oxygen',
+          'Ubuntu',
+          'Cantarell',
+          'Fira Sans',
+          'Droid Sans',
+          'Helvetica Neue',
+          'sans-serif'
+        ],
+        montserrat: [
+          'Montserrat',
+          'sans-serif'
+        ],
+        arial: [
+          'Arial'
+        ],
+        slick: [
+          'slick'
+        ],
+        monospace: [
+          'monospace'
+        ],
+        siq: [
+          'siq'
+        ]
+      }
+    }
+  }
+};
+</script>
+
+        <style>
+    @font-face {
+      font-family: 'Montserrat';
+      src: url('https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2') format("woff2");
+      font-weight: 100 900;
+      font-style: normal;
+    }
+  </style>
+
+        <style>
+    @font-face {
+      font-family: 'Montserrat';
+      src: url('https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2') format("woff2");
+      font-weight: 100 900;
+      font-style: normal;
+    }
+  </style>
+
+        <style>
+    @font-face {
+      /* This font could not be included automatically because of legal reasons. Please add it manually or switch to another font */
+      font-family: 'slick';
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+
+        <style>
+    @font-face {
+      /* This font could not be included automatically because of legal reasons. Please add it manually or switch to another font */
+      font-family: 'siq';
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+
+        <style>
+    @font-face {
+      /* This font could not be included automatically because of legal reasons. Please add it manually or switch to another font */
+      font-family: 'siq';
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+    </head>
+    <body
+        class="text-black text-base not-italic normal-nums font-normal accent-auto block tracking-[normal] leading-[normal] list-outside list-disc text-start indent-[0px] normal-case visible border-separate font-apple_system"><div><div><header
+                    class="sticky bg-white shadow-[rgba(0,0,0,0.25)_0px_4px_4px_0px] flex h-[90px] w-full z-[100] top-0"><div
+                        class="w-[95%] mx-auto md:w-[90%]"><div
+                            class="content-center items-center flex justify-between justify-items-center py-2.5 md:py-0"><a
+                                href="/"
+                                class="text-blue-700 block underline"><img
+                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/national-logo.bf542d39ac7a973809c6.png"
+                                    alt="rae Logo" class="h-[70px] md:h-20" />
+                            </a>
+                            <nav
+                                class="absolute bg-emerald-800 min-h-0 min-w-0 w-full z-10 -left-full top-[90px] md:static md:bg-transparent md:min-h-[auto] md:min-w-[auto] md:w-[calc(100%_-_280px)] md:z-auto md:left-auto md:top-auto"><ul
+                                    class="h-full text-left w-full mx-auto pl-0 md:text-center md:w-[calc(100%_-_20px)]"><li
+                                        class="relative bg-transparent bg-[linear-gradient(270deg,rgb(0,82,43),rgb(12,129,58))] block leading-[50px] text-left px-0 border-b-white border-b md:bg-white md:bg-none md:inline-block md:leading-[89px] md:text-center md:px-[7px] md:border-b-black md:border-b-0"><a
+                                            href="#"
+                                            class="text-white text-sm h-full leading-[50px] text-left uppercase px-[5px] font-montserrat md:text-green-600 md:text-base md:leading-[89px] md:text-center md:px-2.5">instant</a>
+                                    </li>
+                                    <li
+                                        class="relative bg-transparent bg-[linear-gradient(270deg,rgb(0,82,43),rgb(12,129,58))] block leading-[50px] text-left px-0 border-b-white border-b md:bg-white md:bg-none md:inline-block md:leading-[89px] md:text-center md:px-[7px] md:border-b-black md:border-b-0"><a
+                                            href="#"
+                                            class="text-white text-sm h-full leading-[50px] text-left uppercase px-[5px] font-montserrat md:text-green-600 md:text-base md:leading-[89px] md:text-center md:px-2.5">lottery</a>
+                                    </li>
+                                    <li
+                                        class="relative bg-transparent bg-[linear-gradient(270deg,rgb(0,82,43),rgb(12,129,58))] block leading-[50px] text-left px-0 border-b-white border-b md:bg-white md:bg-none md:inline-block md:leading-[89px] md:text-center md:px-[7px] md:border-b-black md:border-b-0"><a
+                                            href="#"
+                                            class="text-white text-sm h-full leading-[50px] text-left uppercase px-[5px] font-montserrat md:text-green-600 md:text-base md:leading-[89px] md:text-center md:px-2.5">scratch</a>
+                                    </li>
+                                    <li
+                                        class="relative bg-transparent bg-[linear-gradient(270deg,rgb(0,82,43),rgb(12,129,58))] block leading-[50px] text-left px-0 border-b-white border-b md:bg-white md:bg-none md:inline-block md:leading-[89px] md:text-center md:px-[7px] md:border-b-black md:border-b-0"><a
+                                            href="#"
+                                            class="text-white text-sm h-full leading-[50px] text-left uppercase px-[5px] font-montserrat md:text-green-600 md:text-base md:leading-[89px] md:text-center md:px-2.5">results</a>
+                                    </li>
+                                    <li
+                                        class="relative bg-transparent bg-[linear-gradient(270deg,rgb(0,82,43),rgb(12,129,58))] block leading-[50px] text-left px-0 md:bg-white md:bg-none md:inline-block md:leading-[89px] md:text-center md:px-[7px]"><a
+                                            href="#"
+                                            class="text-white text-sm h-full leading-[50px] text-left uppercase px-[5px] font-montserrat md:text-green-600 md:text-base md:leading-[89px] md:text-center md:px-2.5">how
+                                            to play</a>
+                                    </li>
+                                </ul>
+                                <div
+                                    class="text-white block text-center mt-[25px] font-montserrat md:hidden"><span
+                                        class="text-xs">Copyright © 2025
+                                        National Lottery Nigeria. All Rights
+                                        Reserved.</span>
+                                    <div class="m-[25px]"><a
+                                            href="https://web.facebook.com/nationallotteryng"
+                                            class="text-xl ml-5"><img
+                                                src="https://c.animaapp.com/me4se9evUuDOyB/assets/icon-1.svg"
+                                                alt="Icon"
+                                                class="inline-block h-5" />
+                                        </a>
+                                        <a
+                                            href="https://www.instagram.com/nationallotteryng/"
+                                            class="text-xl ml-5"><img
+                                                src="https://c.animaapp.com/me4se9evUuDOyB/assets/icon-2.svg"
+                                                alt="Icon"
+                                                class="inline-block h-5" />
+                                        </a>
+                                        <a
+                                            href="https://youtube.com/@nationallotterynigeria"
+                                            class="text-xl ml-5"><img
+                                                src="https://c.animaapp.com/me4se9evUuDOyB/assets/icon-3.svg"
+                                                alt="Icon"
+                                                class="inline-block h-5" />
+                                        </a>
+                                        <a
+                                            href="https://twitter.com/NatLotteryNG"
+                                            class="text-xl ml-5"><img
+                                                src="https://c.animaapp.com/me4se9evUuDOyB/assets/icon-4.svg"
+                                                alt="Icon"
+                                                class="inline-block h-5" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <div
+                                class="items-center flex justify-center md:justify-normal"><a
+                                    class="text-green-600 text-sm block text-nowrap font-montserrat md:text-base">Sign
+                                    In</a>
+                                <span class="block text-nowrap mx-2.5">/</span>
+                                <a
+                                    class="text-green-600 text-sm block text-nowrap font-montserrat md:text-base">Register</a>
+                            </div>
+                            <div
+                                class="relative flex flex-col min-h-[auto] min-w-[auto] md:hidden md:min-h-0 md:min-w-0"><i
+                                    class="italic bg-black block h-0.5 min-h-[auto] min-w-[auto] w-[30px] mx-auto my-1 rounded-sm md:inline md:min-h-0 md:min-w-0"></i>
+                                <i
+                                    class="italic bg-black block h-0.5 min-h-[auto] min-w-[auto] w-[30px] mx-auto my-1 rounded-sm md:inline md:min-h-0 md:min-w-0"></i>
+                                <i
+                                    class="italic bg-black block h-0.5 min-h-[auto] min-w-[auto] w-[30px] mx-auto my-1 rounded-sm md:inline md:min-h-0 md:min-w-0"></i>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <h1 class="text-[32px] font-bold hidden my-[21.44px]">National
+                    Lottery Nigeria</h1>
+                <div class="relative box-border"><button type="button"
+                        class="absolute text-transparent text-[0px] bg-transparent block h-5 leading-[0px] text-center translate-y-[-50.0%] w-5 z-[1] p-0 left-2.5 top-2/4 font-arial md:left-[15px] before:accent-auto before:text-white before:text-xl before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-5 before:list-outside before:list-disc before:opacity-75 before:text-center before:indent-[0px] before:normal-case before:visible before:border-separate before:font-slick">Previous</button>
+                    <div class="relative overflow-hidden"><div
+                            class="relative translate-x-[-375px] w-[4125px] mx-auto left-0 top-0 md:translate-x-[-1280px] md:w-[14080px] before:accent-auto before:text-black before:table before:text-base before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[normal] before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-apple_system after:accent-auto after:clear-both after:text-black after:table after:text-base after:not-italic after:normal-nums after:font-normal after:tracking-[normal] after:leading-[normal] after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-apple_system"><div
+                                class="float-left h-full min-h-px w-screen"><div><div
+                                        class="relative content-center bg-[url('https://nationallotterynigeria.com/static/media/jackpotsBannerMobile.0e15425633f31b8629b8.jpg')] bg-no-repeat bg-cover border-b-neutral-200/70 flex flex-wrap h-[400px] justify-center w-full overflow-hidden bg-center border-b md:bg-[url('https://c.animaapp.com/me4se9evUuDOyB/assets/jackpotsliderbg.0c39cdc9673538188fec.jpg')]"><div
+                                            class="w-[95%] mx-auto md:w-[90%]"><div
+                                                class="content-center items-center flex flex-col justify-center justify-items-center"><img
+                                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/jackpotsliderlogo.6c4c0687354239348716.png"
+                                                    alt="bannerimage"
+                                                    class="h-20 mb-[50px] md:h-[270px] md:mb-0" />
+                                                <div><div
+                                                        class="-mb-2.5 md:mb-0"><div
+                                                            class="text-center md:text-right"></div>
+                                                        <div
+                                                            class="text-white text-sm font-extrabold bg-emerald-800 box-border h-[30px] leading-[30px] min-w-[120px] text-center uppercase w-fit mt-auto mb-[50px] mx-auto px-2.5 rounded-[50px] font-montserrat md:text-base md:font-semibold md:h-[45px] md:leading-[45px] md:min-w-0 md:w-40 md:m-0">REGISTER
+                                                            NOW</div>
+                                                        <img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/plus18.d20f734c7a5519cf699f.png"
+                                                            class="absolute h-[30px] right-[100px] bottom-2.5" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="float-left h-full min-h-px w-screen"><div><div
+                                        class="relative content-center bg-[url('https://nationallotterynigeria.com/static/media/jackpotsBannerMobile.0e15425633f31b8629b8.jpg')] bg-repeat bg-auto border-b-neutral-200/70 flex flex-wrap h-[400px] justify-center w-full overflow-hidden bg-left-top border-b md:bg-[url('https://c.animaapp.com/me4se9evUuDOyB/assets/jackpotsliderbg.0c39cdc9673538188fec.jpg')] md:bg-no-repeat md:bg-cover md:bg-center"><div
+                                            class="w-[95%] mx-auto md:w-[90%]"><div
+                                                class="content-center items-center flex justify-center justify-items-center"><img
+                                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/Naijamegajackopotsliderphone.7369d5730f5a5fd88eaf.png"
+                                                    alt="bannerimage"
+                                                    class="h-[300px] w-[150px] md:w-auto" />
+                                                <div><div
+                                                        class="-mb-2.5 md:mb-0"><div
+                                                            class="text-center ml-0 md:text-right md:ml-10"><p
+                                                                class="tracking-[1px] leading-[29px] text-center mx-auto my-[50px] md:leading-[50px] md:text-left md:m-0"><span
+                                                                    class="text-lime-400 text-[45px] font-black leading-[29px] text-center md:text-[90px] md:leading-[50px] md:text-left">Win</span>
+                                                                <span
+                                                                    class="text-green-500 text-[45px] font-black leading-[29px] text-center md:text-[90px] md:leading-[50px] md:text-left">₦45
+                                                                    million+</span>
+                                                                <br
+                                                                    class="leading-[29px] text-center md:leading-[50px] md:text-left" />
+                                                                <span
+                                                                    class="text-lime-400 text-[45px] font-black leading-[29px] text-center md:text-[90px] md:leading-[50px] md:text-left">with
+                                                                    just</span>
+                                                                <span
+                                                                    class="text-green-500 text-[45px] font-black leading-[29px] text-center md:text-[90px] md:leading-[50px] md:text-left">
+                                                                    ₦100</span>
+                                                            </p>
+                                                        </div>
+                                                        <a href="/naijajackpot"
+                                                            class="text-white text-sm font-extrabold bg-emerald-800 box-border block h-[30px] leading-[30px] min-w-[120px] text-center uppercase w-fit mt-auto mb-[50px] mx-auto px-2.5 rounded-[50px] font-montserrat md:text-base md:font-semibold md:h-[45px] md:leading-[45px] md:min-w-0 md:w-40 md:ml-10 md:mr-0 md:my-0">play
+                                                            now</a>
+                                                        <img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/plus18.d20f734c7a5519cf699f.png"
+                                                            class="absolute h-[30px] right-[100px] bottom-2.5" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="float-left h-full min-h-px w-screen"><div><div
+                                        class="relative content-center bg-[url('https://nationallotterynigeria.com/static/media/jackpotsBannerMobile.0e15425633f31b8629b8.jpg')] bg-no-repeat bg-cover border-b-neutral-200/70 flex flex-wrap h-[400px] justify-center w-full overflow-hidden bg-center border-b md:bg-[url('https://c.animaapp.com/me4se9evUuDOyB/assets/jackpotsliderbg.0c39cdc9673538188fec.jpg')]"><div
+                                            class="w-[95%] mx-auto md:w-[90%]"><div
+                                                class="content-center items-center flex flex-col justify-center justify-items-center md:flex-row-reverse"><img
+                                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/pick3logo.c57d9882e6c29a729a98.png"
+                                                    alt="bannerimage"
+                                                    class="h-[70px] ml-0 md:h-[200px] md:ml-[50px]" />
+                                                <div><div
+                                                        class="-mb-2.5 md:mb-0"><div
+                                                            class="text-center md:text-right"><p
+                                                                class="tracking-[1px] leading-[29px] text-center mx-auto my-[50px] md:leading-[50px] md:text-left md:m-0"><span
+                                                                    class="text-emerald-800 text-[45px] font-black leading-[29px] text-center md:text-[90px] md:leading-[50px] md:text-left">₦50,000</span>
+                                                                <br
+                                                                    class="leading-[29px] text-center md:leading-[50px] md:text-left" />
+                                                                <span
+                                                                    class="text-green-500 text-xl font-bold leading-[29px] text-center md:text-[55px] md:leading-[50px] md:text-left">Every
+                                                                    15 minutes
+                                                                    just for
+                                                                    you!</span>
+                                                                <br
+                                                                    class="leading-[29px] text-center md:leading-[50px] md:text-left" />
+                                                                <span
+                                                                    class="text-emerald-800 text-sm font-bold leading-[29px] text-center md:text-3xl md:leading-[50px] md:text-left">Match
+                                                                    3 numbers
+                                                                    from 0 - 9
+                                                                    to
+                                                                    win</span>
+                                                            </p>
+                                                        </div>
+                                                        <a href="/pick3"
+                                                            class="text-white text-sm font-extrabold bg-emerald-800 box-border block h-[30px] leading-[30px] min-w-[120px] text-center uppercase w-fit mt-auto mb-[50px] mx-auto px-2.5 rounded-[50px] font-montserrat md:text-base md:font-semibold md:h-[45px] md:leading-[45px] md:min-w-0 md:w-40 md:m-0">play
+                                                            now</a>
+                                                        <img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/plus18.d20f734c7a5519cf699f.png"
+                                                            class="absolute h-[30px] right-[100px] bottom-2.5" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="float-left h-full min-h-px w-screen"><div><div
+                                        class="relative content-center bg-[url('https://nationallotterynigeria.com/static/media/jackpotsBannerMobile.0e15425633f31b8629b8.jpg')] bg-no-repeat bg-cover border-b-neutral-200/70 flex flex-wrap h-[400px] justify-center w-full overflow-hidden bg-center border-b md:bg-[url('https://c.animaapp.com/me4se9evUuDOyB/assets/jackpotsliderbg.0c39cdc9673538188fec.jpg')]"><div
+                                            class="w-[95%] mx-auto md:w-[90%]"><div
+                                                class="content-center items-center flex flex-row-reverse justify-around justify-items-center"><img
+                                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/lotto649slider2phones.87f4e335acc510428c9c.png"
+                                                    alt="bannerimage"
+                                                    class="h-[230px] mr-[-110px] md:h-[300px] md:mr-0" />
+                                                <div><div
+                                                        class="-mb-2.5 md:mb-0"><div
+                                                            class="text-center md:text-right"><p
+                                                                class="tracking-[1px] leading-[29px] text-left mx-auto my-[50px] md:leading-[50px] md:m-0"><span
+                                                                    class="text-green-500 text-xl font-bold leading-[29px] md:text-[55px] md:leading-[50px]">Win
+                                                                </span>
+                                                                <br
+                                                                    class="leading-[29px] md:leading-[50px]" />
+                                                                <span
+                                                                    class="text-green-500 text-xl font-bold leading-[29px] md:text-[55px] md:leading-[50px]">unlimited</span>
+                                                                <br
+                                                                    class="leading-[29px] md:leading-[50px]" />
+                                                                <span
+                                                                    class="text-emerald-800 text-[45px] font-black leading-[29px] md:text-[90px] md:leading-[50px]">millions</span>
+                                                                <br
+                                                                    class="leading-[29px] md:leading-[50px]" />
+                                                                <span
+                                                                    class="text-green-500 text-xl font-bold leading-[29px] md:text-[55px] md:leading-[50px]">today!</span>
+                                                            </p>
+                                                        </div>
+                                                        <a href="/lotto649"
+                                                            class="text-white text-sm font-extrabold bg-emerald-800 box-border block h-[30px] leading-[30px] min-w-[120px] text-center uppercase w-fit mb-[50px] px-2.5 rounded-[50px] font-montserrat md:text-base md:font-semibold md:h-[45px] md:leading-[45px] md:min-w-0 md:w-40 md:mb-0">play
+                                                            now</a>
+                                                        <img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/plus18.d20f734c7a5519cf699f.png"
+                                                            class="absolute h-[30px] right-[100px] bottom-2.5" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="float-left h-full min-h-px w-screen"><div><div
+                                        class="relative content-center bg-[url('https://nationallotterynigeria.com/static/media/jackpotsBannerMobile.0e15425633f31b8629b8.jpg')] bg-no-repeat bg-cover border-b-neutral-200/70 flex flex-wrap h-[400px] justify-center text-center w-full overflow-hidden bg-center mt-2.5 border-b md:bg-[url('https://c.animaapp.com/me4se9evUuDOyB/assets/BackgroundScratch.3d99e512de3d7ce9583e.png')] md:text-right"><div
+                                            class="text-center w-[95%] mx-auto md:text-right md:w-[90%]"><div
+                                                class="content-center items-center flex flex-col justify-around justify-items-center text-center md:flex-row md:text-right"><img
+                                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/scratch&winsliderlogos.0e06a2aff57840da141a.png"
+                                                    alt="bannerimage"
+                                                    class="h-[120px] text-center md:h-[230px] md:text-right" />
+                                                <div
+                                                    class="text-center md:text-right"><div
+                                                        class="text-center -mb-2.5 md:text-right md:mb-0"><div
+                                                            class="text-center md:text-right"><p
+                                                                class="tracking-[1px] leading-[29px] text-center mt-2.5 mb-[50px] mx-auto md:leading-[50px] md:text-right md:mb-0 md:mx-0"><span
+                                                                    class="text-emerald-800 text-[45px] font-black leading-[29px] text-center md:text-[90px] md:leading-[50px] md:text-right">Scratch
+                                                                    &amp;
+                                                                    Win</span>
+                                                                <br
+                                                                    class="leading-[29px] text-center md:leading-[50px] md:text-right" />
+                                                                <span
+                                                                    class="text-lime-300 text-[25px] font-extrabold leading-[29px] text-center md:text-green-500 md:text-3xl md:font-bold md:leading-[50px] md:text-right">Amazing
+                                                                    Prizes!</span>
+                                                            </p>
+                                                        </div>
+                                                        <img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/plus18.d20f734c7a5519cf699f.png"
+                                                            class="absolute h-[30px] text-center right-[100px] bottom-2.5 md:text-right" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="float-left h-full min-h-px w-screen"><div><div
+                                        class="relative content-center bg-[url('https://nationallotterynigeria.com/static/media/jackpotsBannerMobile.0e15425633f31b8629b8.jpg')] bg-no-repeat bg-cover border-b-neutral-200/70 flex flex-wrap h-[400px] justify-center w-full overflow-hidden bg-center border-b md:bg-[url('https://c.animaapp.com/me4se9evUuDOyB/assets/jackpotsliderbg.0c39cdc9673538188fec.jpg')]"><div
+                                            class="w-[95%] mx-auto md:w-[90%]"><div
+                                                class="content-center items-center flex flex-col justify-center justify-items-center"><img
+                                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/jackpotsliderlogo.6c4c0687354239348716.png"
+                                                    alt="bannerimage"
+                                                    class="h-20 mb-[50px] md:h-[270px] md:mb-0" />
+                                                <div><div
+                                                        class="-mb-2.5 md:mb-0"><div
+                                                            class="text-center md:text-right"></div>
+                                                        <div
+                                                            class="text-white text-sm font-extrabold bg-emerald-800 box-border h-[30px] leading-[30px] min-w-[120px] text-center uppercase w-fit mt-auto mb-[50px] mx-auto px-2.5 rounded-[50px] font-montserrat md:text-base md:font-semibold md:h-[45px] md:leading-[45px] md:min-w-0 md:w-40 md:m-0">REGISTER
+                                                            NOW</div>
+                                                        <img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/plus18.d20f734c7a5519cf699f.png"
+                                                            class="absolute h-[30px] right-[100px] bottom-2.5" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="float-left h-full min-h-px w-screen"><div><div
+                                        class="relative content-center bg-[url('https://nationallotterynigeria.com/static/media/jackpotsBannerMobile.0e15425633f31b8629b8.jpg')] bg-repeat bg-auto border-b-neutral-200/70 flex flex-wrap h-[400px] justify-center w-full overflow-hidden bg-left-top border-b md:bg-[url('https://c.animaapp.com/me4se9evUuDOyB/assets/jackpotsliderbg.0c39cdc9673538188fec.jpg')] md:bg-no-repeat md:bg-cover md:bg-center"><div
+                                            class="w-[95%] mx-auto md:w-[90%]"><div
+                                                class="content-center items-center flex justify-center justify-items-center"><img
+                                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/Naijamegajackopotsliderphone.7369d5730f5a5fd88eaf.png"
+                                                    alt="bannerimage"
+                                                    class="h-[300px] w-[150px] md:w-auto" />
+                                                <div><div
+                                                        class="-mb-2.5 md:mb-0"><div
+                                                            class="text-center ml-0 md:text-right md:ml-10"><p
+                                                                class="tracking-[1px] leading-[29px] text-center mx-auto my-[50px] md:leading-[50px] md:text-left md:m-0"><span
+                                                                    class="text-lime-400 text-[45px] font-black leading-[29px] text-center md:text-[90px] md:leading-[50px] md:text-left">Win</span>
+                                                                <span
+                                                                    class="text-green-500 text-[45px] font-black leading-[29px] text-center md:text-[90px] md:leading-[50px] md:text-left">₦45
+                                                                    million+</span>
+                                                                <br
+                                                                    class="leading-[29px] text-center md:leading-[50px] md:text-left" />
+                                                                <span
+                                                                    class="text-lime-400 text-[45px] font-black leading-[29px] text-center md:text-[90px] md:leading-[50px] md:text-left">with
+                                                                    just</span>
+                                                                <span
+                                                                    class="text-green-500 text-[45px] font-black leading-[29px] text-center md:text-[90px] md:leading-[50px] md:text-left">
+                                                                    ₦100</span>
+                                                            </p>
+                                                        </div>
+                                                        <a href="/naijajackpot"
+                                                            class="text-white text-sm font-extrabold bg-emerald-800 box-border block h-[30px] leading-[30px] min-w-[120px] text-center uppercase w-fit mt-auto mb-[50px] mx-auto px-2.5 rounded-[50px] font-montserrat md:text-base md:font-semibold md:h-[45px] md:leading-[45px] md:min-w-0 md:w-40 md:ml-10 md:mr-0 md:my-0">play
+                                                            now</a>
+                                                        <img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/plus18.d20f734c7a5519cf699f.png"
+                                                            class="absolute h-[30px] right-[100px] bottom-2.5" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="float-left h-full min-h-px w-screen"><div><div
+                                        class="relative content-center bg-[url('https://nationallotterynigeria.com/static/media/jackpotsBannerMobile.0e15425633f31b8629b8.jpg')] bg-no-repeat bg-cover border-b-neutral-200/70 flex flex-wrap h-[400px] justify-center w-full overflow-hidden bg-center border-b md:bg-[url('https://c.animaapp.com/me4se9evUuDOyB/assets/jackpotsliderbg.0c39cdc9673538188fec.jpg')]"><div
+                                            class="w-[95%] mx-auto md:w-[90%]"><div
+                                                class="content-center items-center flex flex-col justify-center justify-items-center md:flex-row-reverse"><img
+                                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/pick3logo.c57d9882e6c29a729a98.png"
+                                                    alt="bannerimage"
+                                                    class="h-[70px] ml-0 md:h-[200px] md:ml-[50px]" />
+                                                <div><div
+                                                        class="-mb-2.5 md:mb-0"><div
+                                                            class="text-center md:text-right"><p
+                                                                class="tracking-[1px] leading-[29px] text-center mx-auto my-[50px] md:leading-[50px] md:text-left md:m-0"><span
+                                                                    class="text-emerald-800 text-[45px] font-black leading-[29px] text-center md:text-[90px] md:leading-[50px] md:text-left">₦50,000</span>
+                                                                <br
+                                                                    class="leading-[29px] text-center md:leading-[50px] md:text-left" />
+                                                                <span
+                                                                    class="text-green-500 text-xl font-bold leading-[29px] text-center md:text-[55px] md:leading-[50px] md:text-left">Every
+                                                                    15 minutes
+                                                                    just for
+                                                                    you!</span>
+                                                                <br
+                                                                    class="leading-[29px] text-center md:leading-[50px] md:text-left" />
+                                                                <span
+                                                                    class="text-emerald-800 text-sm font-bold leading-[29px] text-center md:text-3xl md:leading-[50px] md:text-left">Match
+                                                                    3 numbers
+                                                                    from 0 - 9
+                                                                    to
+                                                                    win</span>
+                                                            </p>
+                                                        </div>
+                                                        <a href="/pick3"
+                                                            class="text-white text-sm font-extrabold bg-emerald-800 box-border block h-[30px] leading-[30px] min-w-[120px] text-center uppercase w-fit mt-auto mb-[50px] mx-auto px-2.5 rounded-[50px] font-montserrat md:text-base md:font-semibold md:h-[45px] md:leading-[45px] md:min-w-0 md:w-40 md:m-0">play
+                                                            now</a>
+                                                        <img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/plus18.d20f734c7a5519cf699f.png"
+                                                            class="absolute h-[30px] right-[100px] bottom-2.5" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="float-left h-full min-h-px w-screen"><div><div
+                                        class="relative content-center bg-[url('https://nationallotterynigeria.com/static/media/jackpotsBannerMobile.0e15425633f31b8629b8.jpg')] bg-no-repeat bg-cover border-b-neutral-200/70 flex flex-wrap h-[400px] justify-center w-full overflow-hidden bg-center border-b md:bg-[url('https://c.animaapp.com/me4se9evUuDOyB/assets/jackpotsliderbg.0c39cdc9673538188fec.jpg')]"><div
+                                            class="w-[95%] mx-auto md:w-[90%]"><div
+                                                class="content-center items-center flex flex-row-reverse justify-around justify-items-center"><img
+                                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/lotto649slider2phones.87f4e335acc510428c9c.png"
+                                                    alt="bannerimage"
+                                                    class="h-[230px] mr-[-110px] md:h-[300px] md:mr-0" />
+                                                <div><div
+                                                        class="-mb-2.5 md:mb-0"><div
+                                                            class="text-center md:text-right"><p
+                                                                class="tracking-[1px] leading-[29px] text-left mx-auto my-[50px] md:leading-[50px] md:m-0"><span
+                                                                    class="text-green-500 text-xl font-bold leading-[29px] md:text-[55px] md:leading-[50px]">Win
+                                                                </span>
+                                                                <br
+                                                                    class="leading-[29px] md:leading-[50px]" />
+                                                                <span
+                                                                    class="text-green-500 text-xl font-bold leading-[29px] md:text-[55px] md:leading-[50px]">unlimited</span>
+                                                                <br
+                                                                    class="leading-[29px] md:leading-[50px]" />
+                                                                <span
+                                                                    class="text-emerald-800 text-[45px] font-black leading-[29px] md:text-[90px] md:leading-[50px]">millions</span>
+                                                                <br
+                                                                    class="leading-[29px] md:leading-[50px]" />
+                                                                <span
+                                                                    class="text-green-500 text-xl font-bold leading-[29px] md:text-[55px] md:leading-[50px]">today!</span>
+                                                            </p>
+                                                        </div>
+                                                        <a href="/lotto649"
+                                                            class="text-white text-sm font-extrabold bg-emerald-800 box-border block h-[30px] leading-[30px] min-w-[120px] text-center uppercase w-fit mb-[50px] px-2.5 rounded-[50px] font-montserrat md:text-base md:font-semibold md:h-[45px] md:leading-[45px] md:min-w-0 md:w-40 md:mb-0">play
+                                                            now</a>
+                                                        <img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/plus18.d20f734c7a5519cf699f.png"
+                                                            class="absolute h-[30px] right-[100px] bottom-2.5" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="float-left h-full min-h-px w-screen"><div><div
+                                        class="relative content-center bg-[url('https://nationallotterynigeria.com/static/media/jackpotsBannerMobile.0e15425633f31b8629b8.jpg')] bg-no-repeat bg-cover border-b-neutral-200/70 flex flex-wrap h-[400px] justify-center text-center w-full overflow-hidden bg-center mt-2.5 border-b md:bg-[url('https://c.animaapp.com/me4se9evUuDOyB/assets/BackgroundScratch.3d99e512de3d7ce9583e.png')] md:text-right"><div
+                                            class="text-center w-[95%] mx-auto md:text-right md:w-[90%]"><div
+                                                class="content-center items-center flex flex-col justify-around justify-items-center text-center md:flex-row md:text-right"><img
+                                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/scratch&winsliderlogos.0e06a2aff57840da141a.png"
+                                                    alt="bannerimage"
+                                                    class="h-[120px] text-center md:h-[230px] md:text-right" />
+                                                <div
+                                                    class="text-center md:text-right"><div
+                                                        class="text-center -mb-2.5 md:text-right md:mb-0"><div
+                                                            class="text-center md:text-right"><p
+                                                                class="tracking-[1px] leading-[29px] text-center mt-2.5 mb-[50px] mx-auto md:leading-[50px] md:text-right md:mb-0 md:mx-0"><span
+                                                                    class="text-emerald-800 text-[45px] font-black leading-[29px] text-center md:text-[90px] md:leading-[50px] md:text-right">Scratch
+                                                                    &amp;
+                                                                    Win</span>
+                                                                <br
+                                                                    class="leading-[29px] text-center md:leading-[50px] md:text-right" />
+                                                                <span
+                                                                    class="text-lime-300 text-[25px] font-extrabold leading-[29px] text-center md:text-green-500 md:text-3xl md:font-bold md:leading-[50px] md:text-right">Amazing
+                                                                    Prizes!</span>
+                                                            </p>
+                                                        </div>
+                                                        <img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/plus18.d20f734c7a5519cf699f.png"
+                                                            class="absolute h-[30px] text-center right-[100px] bottom-2.5 md:text-right" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="float-left h-full min-h-px w-screen"><div><div
+                                        class="relative content-center bg-[url('https://nationallotterynigeria.com/static/media/jackpotsBannerMobile.0e15425633f31b8629b8.jpg')] bg-no-repeat bg-cover border-b-neutral-200/70 flex flex-wrap h-[400px] justify-center w-full overflow-hidden bg-center border-b md:bg-[url('https://c.animaapp.com/me4se9evUuDOyB/assets/jackpotsliderbg.0c39cdc9673538188fec.jpg')]"><div
+                                            class="w-[95%] mx-auto md:w-[90%]"><div
+                                                class="content-center items-center flex flex-col justify-center justify-items-center"><img
+                                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/jackpotsliderlogo.6c4c0687354239348716.png"
+                                                    alt="bannerimage"
+                                                    class="h-20 mb-[50px] md:h-[270px] md:mb-0" />
+                                                <div><div
+                                                        class="-mb-2.5 md:mb-0"><div
+                                                            class="text-center md:text-right"></div>
+                                                        <div
+                                                            class="text-white text-sm font-extrabold bg-emerald-800 box-border h-[30px] leading-[30px] min-w-[120px] text-center uppercase w-fit mt-auto mb-[50px] mx-auto px-2.5 rounded-[50px] font-montserrat md:text-base md:font-semibold md:h-[45px] md:leading-[45px] md:min-w-0 md:w-40 md:m-0">REGISTER
+                                                            NOW</div>
+                                                        <img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/plus18.d20f734c7a5519cf699f.png"
+                                                            class="absolute h-[30px] right-[100px] bottom-2.5" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button"
+                        class="absolute text-transparent text-[0px] bg-transparent block h-5 leading-[0px] text-center translate-y-[-50.0%] w-5 p-0 right-2.5 top-2/4 font-arial md:right-[15px] before:accent-auto before:text-white before:text-xl before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-5 before:list-outside before:list-disc before:opacity-75 before:text-center before:indent-[0px] before:normal-case before:visible before:border-separate before:font-slick">Next</button>
+                </div>
+                <div class="w-[95%] mx-auto md:w-[90%]"><section
+                        class="mt-10"><div
+                            class="relative content-center items-center bg-[url('https://nationallotterynigeria.com/static/media/NaijaBannerBackground.afd7c7e25472506c44c6.jpg')] bg-no-repeat bg-cover flex justify-center justify-items-center min-h-[330px] w-full overflow-hidden bg-center rounded-[15px] md:min-h-[250px]"><div
+                                class="w-[95%] mx-auto md:w-[90%]"><img
+                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/ballshomepagebg.69b6438b967b0d510ef7.png"
+                                    alt="niajaavatar"
+                                    class="absolute hidden h-[250px] transform-none w-fit left-0 top-2/4 md:block md:translate-y-[-50.0%]" />
+                                <div
+                                    class="absolute translate-x-[-50.0%] translate-y-[-50.0%] w-fit m-auto left-2/4 top-2/4 md:static md:transform-none md:w-auto md:m-0 md:left-auto md:top-auto"><img
+                                        src="https://c.animaapp.com/me4se9evUuDOyB/assets/niajalogo.4aee71c68bd8652138df.png"
+                                        alt="niajalogo"
+                                        class="relative h-20 mt-5 mb-0 mx-auto inset-0 md:absolute md:h-[110px] md:my-auto" />
+                                    <div class="w-fit ml-auto"><span
+                                            class="text-white text-[25px] font-bold block text-center uppercase py-[5px] font-montserrat md:text-right md:py-0">jackpot
+                                            prize</span>
+                                        <span
+                                            class="text-lime-500 text-[35px] font-bold block text-center font-montserrat md:text-[25px] md:text-right">₦
+                                            45,000,000</span>
+                                        <div
+                                            class="text-white text-[25px] text-center font-montserrat md:text-right"><span
+                                                class="text-center md:text-right">DRAW
+                                                IN </span>
+                                            <span
+                                                class="text-center md:text-right">03:21:11:04</span>
+                                        </div>
+                                        <a href="/naijajackpot"
+                                            class="text-green-900 text-[13px] font-semibold bg-white box-border block h-[45px] leading-[45px] text-center uppercase w-[270px] mx-auto my-2.5 px-2.5 rounded-[50px] border-2 border-solid border-white font-montserrat md:text-sm md:leading-10 md:w-auto md:mr-0 md:mt-[15px] md:mb-0">Play
+                                            Naija Mega Jackpot</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="mt-10"><div class="relative box-border"><button
+                                type="button"
+                                class="absolute text-transparent text-[0px] bg-transparent block h-5 leading-[0px] text-center translate-y-[-50.0%] w-5 z-[1] p-0 left-2.5 top-2/4 font-arial md:left-[15px] before:accent-auto before:text-white before:text-xl before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-5 before:list-outside before:list-disc before:opacity-75 before:text-center before:indent-[0px] before:normal-case before:visible before:border-separate before:font-slick">Previous</button>
+                            <div class="relative overflow-hidden"><div
+                                    class="relative translate-x-[-1068px] w-[2492px] mx-auto left-0 top-0 md:translate-x-[-3456px] md:w-[8064px] before:accent-auto before:text-black before:table before:text-base before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[normal] before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-apple_system after:accent-auto after:clear-both after:text-black after:table after:text-base after:not-italic after:normal-nums after:font-normal after:tracking-[normal] after:leading-[normal] after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-apple_system"><div
+                                        class="float-left h-full min-h-px w-[356px] md:w-[1152px]"><div><div
+                                                class="bg-amber-400 inline-block w-full rounded-[15px]"><div
+                                                    class="content-center items-center bg-amber-400 shadow-[rgba(0,0,0,0.25)_0px_4px_4px_0px] block h-[250px] justify-around justify-items-center w-[70%] mx-auto my-2.5 p-2.5 rounded-[15px] border-[3px] border-solid border-white md:flex md:h-[150px] md:w-[90%]"><div
+                                                        class="content-center items-center block justify-center justify-items-center min-h-0 min-w-0 text-center w-fit mx-auto font-montserrat md:flex md:min-h-[auto] md:min-w-[auto] md:text-start md:w-auto md:mx-0"><img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/niajalogo.4aee71c68bd8652138df.png"
+                                                            alt="logogame"
+                                                            class="h-20 min-h-0 min-w-0 text-center m-auto md:h-[130px] md:min-h-[auto] md:min-w-[auto] md:text-start md:m-0" />
+                                                        <div
+                                                            class="min-h-0 min-w-0 text-center ml-0 mt-2.5 md:min-h-[auto] md:min-w-[auto] md:text-start md:ml-5 md:mt-0"><span
+                                                                class="text-white text-xl block text-center mb-[5px] md:text-3xl md:text-start">Latest
+                                                                Results</span>
+                                                            <span
+                                                                class="text-white font-light block text-center md:text-start">09-08-2025</span>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="min-h-0 min-w-0 text-center w-fit mt-[5px] mx-auto md:min-h-[auto] md:min-w-[auto] md:mt-0 md:mx-0"><span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">27</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">31</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">32</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">44</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">47</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">5</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">6</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="float-left h-full min-h-px w-[356px] md:w-[1152px]"><div><div
+                                                class="bg-lime-400 inline-block w-full rounded-[15px]"><div
+                                                    class="content-center items-center bg-lime-400 shadow-[rgba(0,0,0,0.25)_0px_4px_4px_0px] block h-[250px] justify-around justify-items-center w-[70%] mx-auto my-2.5 p-2.5 rounded-[15px] border-[3px] border-solid border-white md:flex md:h-[150px] md:w-[90%]"><div
+                                                        class="content-center items-center block justify-center justify-items-center min-h-0 min-w-0 text-center w-fit mx-auto font-montserrat md:flex md:min-h-[auto] md:min-w-[auto] md:text-start md:w-auto md:mx-0"><img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/Lotto-649.1d5ab13b22e41e4b16c9.png"
+                                                            alt="logogame"
+                                                            class="h-20 min-h-0 min-w-0 text-center m-auto md:h-[130px] md:min-h-[auto] md:min-w-[auto] md:text-start md:m-0" />
+                                                        <div
+                                                            class="min-h-0 min-w-0 text-center ml-0 mt-2.5 md:min-h-[auto] md:min-w-[auto] md:text-start md:ml-5 md:mt-0"><span
+                                                                class="text-white text-xl block text-center mb-[5px] md:text-3xl md:text-start">Latest
+                                                                Results</span>
+                                                            <span
+                                                                class="text-green-800 font-light block text-center md:text-start">09-08-2025</span>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="min-h-0 min-w-0 text-center w-fit mt-[5px] mx-auto md:min-h-[auto] md:min-w-[auto] md:mt-0 md:mx-0"><span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">9</span>
+                                                        <span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">15</span>
+                                                        <span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">20</span>
+                                                        <span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">21</span>
+                                                        <span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">42</span>
+                                                        <span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">48</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="float-left h-full min-h-px w-[356px] md:w-[1152px]"><div><div
+                                                class="bg-green-600 inline-block w-full rounded-[15px]"><div
+                                                    class="content-center items-center bg-green-600 shadow-[rgba(0,0,0,0.25)_0px_4px_4px_0px] block h-[250px] justify-around justify-items-center w-[70%] mx-auto my-2.5 p-2.5 rounded-[15px] border-[3px] border-solid border-white md:flex md:h-[150px] md:w-[90%]"><div
+                                                        class="content-center items-center block justify-center justify-items-center min-h-0 min-w-0 text-center w-fit mx-auto font-montserrat md:flex md:min-h-[auto] md:min-w-[auto] md:text-start md:w-auto md:mx-0"><img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/pick3logo.c57d9882e6c29a729a98.png"
+                                                            alt="logogame"
+                                                            class="h-20 min-h-0 min-w-0 text-center m-auto md:h-[100px] md:min-h-[auto] md:min-w-[auto] md:text-start md:m-0" />
+                                                        <div
+                                                            class="min-h-0 min-w-0 text-center ml-0 mt-2.5 md:min-h-[auto] md:min-w-[auto] md:text-start md:ml-5 md:mt-0"><span
+                                                                class="text-white text-xl block text-center mb-[5px] md:text-3xl md:text-start">Latest
+                                                                Results</span>
+                                                            <span
+                                                                class="text-white font-light block text-center md:text-start">09-08-2025</span>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="min-h-0 min-w-0 text-center w-fit mt-[5px] mx-auto md:min-h-[auto] md:min-w-[auto] md:mt-0 md:mx-0"><span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-[55px] w-[55px] m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[60px] md:w-[60px]">2</span>
+                                                        <span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-[55px] w-[55px] m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[60px] md:w-[60px]">7</span>
+                                                        <span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-[55px] w-[55px] m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[60px] md:w-[60px]">3</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="float-left h-full min-h-px w-[356px] md:w-[1152px]"><div><div
+                                                class="bg-amber-400 inline-block w-full rounded-[15px]"><div
+                                                    class="content-center items-center bg-amber-400 shadow-[rgba(0,0,0,0.25)_0px_4px_4px_0px] block h-[250px] justify-around justify-items-center w-[70%] mx-auto my-2.5 p-2.5 rounded-[15px] border-[3px] border-solid border-white md:flex md:h-[150px] md:w-[90%]"><div
+                                                        class="content-center items-center block justify-center justify-items-center min-h-0 min-w-0 text-center w-fit mx-auto font-montserrat md:flex md:min-h-[auto] md:min-w-[auto] md:text-start md:w-auto md:mx-0"><img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/niajalogo.4aee71c68bd8652138df.png"
+                                                            alt="logogame"
+                                                            class="h-20 min-h-0 min-w-0 text-center m-auto md:h-[130px] md:min-h-[auto] md:min-w-[auto] md:text-start md:m-0" />
+                                                        <div
+                                                            class="min-h-0 min-w-0 text-center ml-0 mt-2.5 md:min-h-[auto] md:min-w-[auto] md:text-start md:ml-5 md:mt-0"><span
+                                                                class="text-white text-xl block text-center mb-[5px] md:text-3xl md:text-start">Latest
+                                                                Results</span>
+                                                            <span
+                                                                class="text-white font-light block text-center md:text-start">09-08-2025</span>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="min-h-0 min-w-0 text-center w-fit mt-[5px] mx-auto md:min-h-[auto] md:min-w-[auto] md:mt-0 md:mx-0"><span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">27</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">31</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">32</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">44</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">47</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">5</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">6</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="float-left h-full min-h-px w-[356px] md:w-[1152px]"><div><div
+                                                class="bg-lime-400 inline-block w-full rounded-[15px]"><div
+                                                    class="content-center items-center bg-lime-400 shadow-[rgba(0,0,0,0.25)_0px_4px_4px_0px] block h-[250px] justify-around justify-items-center w-[70%] mx-auto my-2.5 p-2.5 rounded-[15px] border-[3px] border-solid border-white md:flex md:h-[150px] md:w-[90%]"><div
+                                                        class="content-center items-center block justify-center justify-items-center min-h-0 min-w-0 text-center w-fit mx-auto font-montserrat md:flex md:min-h-[auto] md:min-w-[auto] md:text-start md:w-auto md:mx-0"><img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/Lotto-649.1d5ab13b22e41e4b16c9.png"
+                                                            alt="logogame"
+                                                            class="h-20 min-h-0 min-w-0 text-center m-auto md:h-[130px] md:min-h-[auto] md:min-w-[auto] md:text-start md:m-0" />
+                                                        <div
+                                                            class="min-h-0 min-w-0 text-center ml-0 mt-2.5 md:min-h-[auto] md:min-w-[auto] md:text-start md:ml-5 md:mt-0"><span
+                                                                class="text-white text-xl block text-center mb-[5px] md:text-3xl md:text-start">Latest
+                                                                Results</span>
+                                                            <span
+                                                                class="text-green-800 font-light block text-center md:text-start">09-08-2025</span>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="min-h-0 min-w-0 text-center w-fit mt-[5px] mx-auto md:min-h-[auto] md:min-w-[auto] md:mt-0 md:mx-0"><span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">9</span>
+                                                        <span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">15</span>
+                                                        <span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">20</span>
+                                                        <span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">21</span>
+                                                        <span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">42</span>
+                                                        <span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">48</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="float-left h-full min-h-px w-[356px] md:w-[1152px]"><div><div
+                                                class="bg-green-600 inline-block w-full rounded-[15px]"><div
+                                                    class="content-center items-center bg-green-600 shadow-[rgba(0,0,0,0.25)_0px_4px_4px_0px] block h-[250px] justify-around justify-items-center w-[70%] mx-auto my-2.5 p-2.5 rounded-[15px] border-[3px] border-solid border-white md:flex md:h-[150px] md:w-[90%]"><div
+                                                        class="content-center items-center block justify-center justify-items-center min-h-0 min-w-0 text-center w-fit mx-auto font-montserrat md:flex md:min-h-[auto] md:min-w-[auto] md:text-start md:w-auto md:mx-0"><img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/pick3logo.c57d9882e6c29a729a98.png"
+                                                            alt="logogame"
+                                                            class="h-20 min-h-0 min-w-0 text-center m-auto md:h-[100px] md:min-h-[auto] md:min-w-[auto] md:text-start md:m-0" />
+                                                        <div
+                                                            class="min-h-0 min-w-0 text-center ml-0 mt-2.5 md:min-h-[auto] md:min-w-[auto] md:text-start md:ml-5 md:mt-0"><span
+                                                                class="text-white text-xl block text-center mb-[5px] md:text-3xl md:text-start">Latest
+                                                                Results</span>
+                                                            <span
+                                                                class="text-white font-light block text-center md:text-start">09-08-2025</span>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="min-h-0 min-w-0 text-center w-fit mt-[5px] mx-auto md:min-h-[auto] md:min-w-[auto] md:mt-0 md:mx-0"><span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-[55px] w-[55px] m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[60px] md:w-[60px]">2</span>
+                                                        <span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-[55px] w-[55px] m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[60px] md:w-[60px]">7</span>
+                                                        <span
+                                                            class="text-white text-xl bg-green-800 inline-block leading-[55px] w-[55px] m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[60px] md:w-[60px]">3</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="float-left h-full min-h-px w-[356px] md:w-[1152px]"><div><div
+                                                class="bg-amber-400 inline-block w-full rounded-[15px]"><div
+                                                    class="content-center items-center bg-amber-400 shadow-[rgba(0,0,0,0.25)_0px_4px_4px_0px] block h-[250px] justify-around justify-items-center w-[70%] mx-auto my-2.5 p-2.5 rounded-[15px] border-[3px] border-solid border-white md:flex md:h-[150px] md:w-[90%]"><div
+                                                        class="content-center items-center block justify-center justify-items-center min-h-0 min-w-0 text-center w-fit mx-auto font-montserrat md:flex md:min-h-[auto] md:min-w-[auto] md:text-start md:w-auto md:mx-0"><img
+                                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/niajalogo.4aee71c68bd8652138df.png"
+                                                            alt="logogame"
+                                                            class="h-20 min-h-0 min-w-0 text-center m-auto md:h-[130px] md:min-h-[auto] md:min-w-[auto] md:text-start md:m-0" />
+                                                        <div
+                                                            class="min-h-0 min-w-0 text-center ml-0 mt-2.5 md:min-h-[auto] md:min-w-[auto] md:text-start md:ml-5 md:mt-0"><span
+                                                                class="text-white text-xl block text-center mb-[5px] md:text-3xl md:text-start">Latest
+                                                                Results</span>
+                                                            <span
+                                                                class="text-white font-light block text-center md:text-start">09-08-2025</span>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="min-h-0 min-w-0 text-center w-fit mt-[5px] mx-auto md:min-h-[auto] md:min-w-[auto] md:mt-0 md:mx-0"><span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">27</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">31</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">32</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">44</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">47</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">5</span>
+                                                        <span
+                                                            class="text-blue-900 text-xl bg-white inline-block leading-10 w-10 m-[5px] rounded-[100%] font-montserrat md:text-[25px] md:leading-[50px] md:w-[50px]">6</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button"
+                                class="absolute text-transparent text-[0px] bg-transparent block h-5 leading-[0px] text-center translate-y-[-50.0%] w-5 p-0 right-2.5 top-2/4 font-arial md:right-[15px] before:accent-auto before:text-white before:text-xl before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-5 before:list-outside before:list-disc before:opacity-75 before:text-center before:indent-[0px] before:normal-case before:visible before:border-separate before:font-slick">Next</button>
+                        </div>
+                    </div>
+                    <div><div
+                            class="relative bg-[linear-gradient(90deg,rgb(138,197,63),rgb(42,132,57)_35%,rgb(0,104,55))] shadow-[rgba(89,89,89,0.68)_0px_0px_8px_1px] overflow-hidden my-10 rounded-[30px] md:rounded-[15px]"><div
+                                class="w-[95%] mx-auto md:w-[90%]"><div
+                                    class="content-center items-center block flex-row-reverse justify-between justify-items-center min-h-[280px] md:flex md:min-h-[250px]"><div
+                                        class="min-h-0 min-w-0 w-fit m-auto md:min-h-[auto] md:min-w-[auto] md:w-auto md:m-0"><img
+                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/pick3logo.c57d9882e6c29a729a98.png"
+                                            alt="section img"
+                                            class="relative inline h-20 mt-2.5 mb-0 mx-0 inset-0 md:absolute md:block md:h-[110px] md:m-auto" />
+                                        <img
+                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/753numberballs.36bd8e9e88374a506ff2.png"
+                                            alt="section img"
+                                            class="absolute hidden h-full right-5 inset-y-0 md:block" />
+                                    </div>
+                                    <div
+                                        class="min-h-0 min-w-0 w-full md:min-h-[auto] md:min-w-[auto] md:w-[250px]"><p
+                                            class="text-white text-base font-bold text-center uppercase my-4 md:text-xl md:text-left md:my-5">
+                                            pick 3 numbers and win N50,000 every
+                                            15 minutes!!</p>
+                                        <div class="mt-[30px] md:mt-0"><a
+                                                href="/pick3"
+                                                class="text-white text-sm font-medium bg-emerald-800 box-border block h-[55px] leading-[55px] text-center uppercase w-[270px] border-emerald-800 mx-auto px-2.5 rounded-[50px] border-2 border-solid font-montserrat md:h-[45px] md:leading-10 md:w-auto md:mx-0">play
+                                                pick3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div><div
+                            class="relative bg-[url('https://nationallotterynigeria.com/static/media/lotto649bgslider.88da6024ea129c512637.jpg')] bg-no-repeat bg-cover shadow-[rgba(89,89,89,0.68)_0px_0px_8px_1px] overflow-hidden bg-center my-10 rounded-[30px] md:rounded-[15px]"><div
+                                class="w-[95%] mx-auto md:w-[90%]"><div
+                                    class="content-center items-center block justify-between justify-items-center min-h-[280px] md:flex md:min-h-[250px]"><div
+                                        class="min-h-0 min-w-0 w-fit m-auto md:min-h-[auto] md:min-w-[auto] md:w-auto md:m-0"><img
+                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/Lotto-649.1d5ab13b22e41e4b16c9.png"
+                                            alt="section img"
+                                            class="relative inline h-20 mt-2.5 mb-0 mx-0 inset-0 md:absolute md:block md:h-[210px] md:m-auto" />
+                                        <img
+                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/lotto649ballsslider.45936523f7414281db70.png"
+                                            alt="section img"
+                                            class="absolute hidden h-full left-5 inset-y-0 md:block" />
+                                    </div>
+                                    <div
+                                        class="min-h-0 min-w-0 w-full md:min-h-[auto] md:min-w-[auto] md:w-[250px]"><p
+                                            class="text-emerald-800 text-base font-bold text-center uppercase ml-auto mt-4 mb-0 md:text-xl md:text-right md:my-5">
+                                            play the lotto 6/49 game and win
+                                            your share of millions!</p>
+                                        <div class="mt-[30px] md:mt-0"><a
+                                                href="/lotto649"
+                                                class="text-white text-sm font-medium bg-emerald-800 shadow-[rgb(0,102,54)_0px_0px_3px_0px] box-border block h-[55px] leading-[55px] text-center uppercase w-[270px] border-emerald-800 mx-auto px-2.5 rounded-[50px] border-2 border-solid font-montserrat md:h-[45px] md:leading-10 md:w-auto md:mr-0">play
+                                                6/49</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative bg-[linear-gradient(rgb(237,249,225),rgb(189,212,181))] w-full py-[15px] rounded-[15px] md:py-[30px]"><div
+                            class="text-center"><span
+                                class="text-emerald-800 text-3xl font-bold inline-block capitalize font-montserrat md:text-[45px] md:inline">scratch
+                                &amp; win!</span>
+                            <p
+                                class="text-green-500 text-sm font-medium uppercase mt-2.5 mb-[25px] font-montserrat md:text-xl">a
+                                scratch games collection to have fun &amp; win
+                                big</p>
+                        </div>
+                        <div
+                            class="content-center items-center flex justify-center justify-items-center"><div><div
+                                    class="bg-white shadow-[rgba(0,0,0,0.25)_0px_4px_4px_0px] h-[85px] w-[85px] p-[5px] rounded-[30px] md:h-[185px] md:w-[185px] md:rounded-[20px]"><img
+                                        src="https://c.animaapp.com/me4se9evUuDOyB/assets/easywinlogo.4956ca1431e501404876.png"
+                                        alt="img scratch"
+                                        class="relative translate-x-[-50.0%] translate-y-[-50.0%] w-[70px] left-2/4 top-2/4 md:w-40" />
+                                </div>
+                                <div
+                                    class="hidden w-fit mt-[30px] mx-auto md:block"><a
+                                        href="/easywin"
+                                        class="text-white text-sm font-medium bg-green-600 shadow-[rgb(18,172,75)_0px_0px_3px_0px] box-border block h-[45px] leading-[42px] min-w-40 text-center uppercase border-green-600 px-2.5 rounded-[50px] border-2 border-solid font-montserrat">play
+                                        easywin</a>
+                                </div>
+                            </div>
+                            <div class="ml-5 md:ml-[60px]"><div
+                                    class="bg-white shadow-[rgba(0,0,0,0.25)_0px_4px_4px_0px] h-[85px] w-[85px] p-[5px] rounded-[30px] md:h-[185px] md:w-[185px] md:rounded-[20px]"><img
+                                        src="https://c.animaapp.com/me4se9evUuDOyB/assets/chairmanlogo.2f65314cbf7980bd8913.png"
+                                        alt="img scratch"
+                                        class="relative translate-x-[-50.0%] translate-y-[-50.0%] w-[70px] left-2/4 top-2/4 md:w-40" />
+                                </div>
+                                <div
+                                    class="hidden w-fit mt-[30px] mx-auto md:block"><a
+                                        href="/chairman"
+                                        class="text-white text-sm font-medium bg-green-600 shadow-[rgb(18,172,75)_0px_0px_3px_0px] box-border block h-[45px] leading-[42px] min-w-40 text-center uppercase border-green-600 px-2.5 rounded-[50px] border-2 border-solid font-montserrat">play
+                                        chairman</a>
+                                </div>
+                            </div>
+                            <div class="ml-5 md:ml-[60px]"><div
+                                    class="bg-white shadow-[rgba(0,0,0,0.25)_0px_4px_4px_0px] h-[85px] w-[85px] p-[5px] rounded-[30px] md:h-[185px] md:w-[185px] md:rounded-[20px]"><img
+                                        src="https://c.animaapp.com/me4se9evUuDOyB/assets/jaralogo.75c42a0e9a6c48977a09.png"
+                                        alt="img scratch"
+                                        class="relative translate-x-[-50.0%] translate-y-[-50.0%] w-[70px] left-2/4 top-2/4 md:w-40" />
+                                </div>
+                                <div
+                                    class="hidden w-fit mt-[30px] mx-auto md:block"><a
+                                        href="/jara"
+                                        class="text-white text-sm font-medium bg-green-600 shadow-[rgb(18,172,75)_0px_0px_3px_0px] box-border block h-[45px] leading-[42px] min-w-40 text-center uppercase border-green-600 px-2.5 rounded-[50px] border-2 border-solid font-montserrat">play
+                                        jara</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="mt-10"><div
+                            class="bg-green-600 text-center w-full py-5 rounded-[15px]"><span
+                                class="text-white text-[25px] block capitalize w-[70%] mt-auto mb-5 mx-auto font-montserrat md:hidden">watch
+                                how to play our games</span>
+                            <div
+                                class="content-center items-center flex justify-center justify-items-center"><div
+                                    class="w-[300px] m-auto"><div
+                                        class="relative bg-white shadow-[rgba(0,0,0,0.25)_0px_4px_4px_0px] h-[85px] w-[85px] m-auto p-[5px] rounded-[30px] md:h-[185px] md:w-[185px] md:rounded-[20px]"><img
+                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/pick3logo.c57d9882e6c29a729a98.png"
+                                            class="absolute opacity-60 translate-x-[-50.0%] translate-y-[-50.0%] w-[70px] left-2/4 top-2/4 md:w-40" />
+                                        <div
+                                            class="absolute translate-x-[-50.0%] translate-y-[-50.0%] left-2/4 top-2/4"><div
+                                                class="border-l-stone-500 h-0 w-0 border-l-[20px] border-y-transparent border-y-[10px] md:border-l-[30px] md:border-y-[20px]"></div>
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="text-white text-xs hidden w-full mt-5 font-montserrat md:text-xl md:block">Watch<br
+                                            class="text-xs md:text-xl" />
+                                        How to play <br
+                                            class="text-xs md:text-xl" />
+                                        Pick3</span>
+                                </div>
+                                <div class="w-[300px] m-auto"><div
+                                        class="relative bg-white shadow-[rgba(0,0,0,0.25)_0px_4px_4px_0px] h-[85px] w-[85px] m-auto p-[5px] rounded-[30px] md:h-[185px] md:w-[185px] md:rounded-[20px]"><img
+                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/Lotto-649.1d5ab13b22e41e4b16c9.png"
+                                            class="absolute opacity-60 translate-x-[-50.0%] translate-y-[-50.0%] w-[70px] left-2/4 top-2/4 md:w-40" />
+                                        <div
+                                            class="absolute translate-x-[-50.0%] translate-y-[-50.0%] left-2/4 top-2/4"><div
+                                                class="border-l-stone-500 h-0 w-0 border-l-[20px] border-y-transparent border-y-[10px] md:border-l-[30px] md:border-y-[20px]"></div>
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="text-white text-xs hidden w-full mt-5 font-montserrat md:text-xl md:block">Watch<br
+                                            class="text-xs md:text-xl" />
+                                        How to play <br
+                                            class="text-xs md:text-xl" />
+                                        Lotto 6/49</span>
+                                </div>
+                                <div class="w-[300px] m-auto"><div
+                                        class="relative bg-white shadow-[rgba(0,0,0,0.25)_0px_4px_4px_0px] h-[85px] w-[85px] m-auto p-[5px] rounded-[30px] md:h-[185px] md:w-[185px] md:rounded-[20px]"><img
+                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/niajalogo.4aee71c68bd8652138df.png"
+                                            class="absolute opacity-60 translate-x-[-50.0%] translate-y-[-50.0%] w-[70px] left-2/4 top-2/4 md:w-40" />
+                                        <div
+                                            class="absolute translate-x-[-50.0%] translate-y-[-50.0%] left-2/4 top-2/4"><div
+                                                class="border-l-stone-500 h-0 w-0 border-l-[20px] border-y-transparent border-y-[10px] md:border-l-[30px] md:border-y-[20px]"></div>
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="text-white text-xs hidden w-full mt-5 font-montserrat md:text-xl md:block">Watch<br
+                                            class="text-xs md:text-xl" />
+                                        How to play <br
+                                            class="text-xs md:text-xl" />
+                                        Naija Mega Jackpot</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <footer class="bg-emerald-950"><div
+                        class="w-[95%] mx-auto md:w-[90%]"><div
+                            class="content-center block justify-between justify-items-center mt-10 pt-[15px] md:flex"><div
+                                class="relative min-h-0 min-w-0 w-auto pb-[5px] md:min-h-[auto] md:min-w-[auto] md:w-3/12 md:pb-5"><img
+                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/national-logo.bf542d39ac7a973809c6.png"
+                                    alt="logo_elrae"
+                                    class="block w-[70px] m-auto md:inline md:w-[110px] md:m-0" />
+                                <img
+                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/plus18-logo.139c58419af10940de74.png"
+                                    alt="plus 18"
+                                    class="relative aspect-[0_/_1] object-contain w-[60px] mx-auto my-2.5 right-auto md:absolute md:aspect-[4_/_2] md:w-2/5 md:m-0 md:right-[10%]" />
+                                <div
+                                    class="absolute hidden bottom-[10%] md:block"><img
+                                        src="https://c.animaapp.com/me4se9evUuDOyB/assets/quickteller_icon.81952b63040ee408ef8b.png"
+                                        alt="quickteller"
+                                        class="aspect-[3_/_2] object-contain w-[100px] m-auto md:aspect-[4_/_2] md:w-2/5 md:m-0" />
+                                    <img
+                                        src="https://c.animaapp.com/me4se9evUuDOyB/assets/nlrc_logo.31a439998d2d54688586.png"
+                                        alt="nlrc_logo"
+                                        class="aspect-[3_/_2] object-contain w-[100px] ml-2.5 mr-auto my-auto md:aspect-[4_/_2] md:w-2/5 md:m-0" />
+                                </div>
+                            </div>
+                            <div
+                                class="relative min-h-0 min-w-0 w-auto pb-[5px] md:min-h-[auto] md:min-w-[auto] md:w-3/12 md:pb-5"><ul
+                                    class="h-[35px] overflow-hidden my-4 pl-0 md:h-auto md:overflow-visible"><li
+                                        class="text-white text-base font-bold list-none text-center pb-[27px] font-montserrat md:text-xl md:text-left">Games</li>
+                                    <li
+                                        class="text-white text-sm list-none text-center mb-[22px] font-montserrat md:text-base md:text-left"><a
+                                            href="/naijajackpot"
+                                            class="text-sm text-center md:text-base md:text-left">Naija
+                                            Mega Jackpot</a>
+                                    </li>
+                                    <li
+                                        class="text-white text-sm list-none text-center mb-[22px] font-montserrat md:text-base md:text-left"><a
+                                            href="/lotto649"
+                                            class="text-sm text-center md:text-base md:text-left">Lotto
+                                            6/49</a>
+                                    </li>
+                                    <li
+                                        class="text-white text-sm list-none text-center mb-[22px] font-montserrat md:text-base md:text-left"><a
+                                            href="/pick3"
+                                            class="text-sm text-center md:text-base md:text-left">Pick
+                                            3</a>
+                                    </li>
+                                    <li
+                                        class="text-white text-sm list-none text-center mb-[22px] font-montserrat md:text-base md:text-left"><a
+                                            href="/chairman"
+                                            class="text-sm text-center md:text-base md:text-left">Chairman</a>
+                                    </li>
+                                    <li
+                                        class="text-white text-sm list-none text-center mb-[22px] font-montserrat md:text-base md:text-left"><a
+                                            href="/jara"
+                                            class="text-sm text-center md:text-base md:text-left">Jara</a>
+                                    </li>
+                                    <li
+                                        class="text-white text-sm list-none text-center mb-[22px] font-montserrat md:text-base md:text-left"><a
+                                            href="/easywin"
+                                            class="text-sm text-center md:text-base md:text-left">EasyWin</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div
+                                class="relative min-h-0 min-w-0 w-auto pb-[5px] md:min-h-[auto] md:min-w-[auto] md:w-3/12 md:pb-5"><ul
+                                    class="h-[35px] overflow-hidden my-4 pl-0 md:h-auto md:overflow-visible"><li
+                                        class="text-white text-base font-bold list-none text-center pb-[27px] font-montserrat md:text-xl md:text-left">General
+                                        Information</li>
+                                    <li
+                                        class="text-white text-sm list-none text-center mb-[22px] font-montserrat md:text-base md:text-left"><a
+                                            href="/aboutus"
+                                            class="text-sm text-center md:text-base md:text-left">About
+                                            Us</a>
+                                    </li>
+                                    <li
+                                        class="text-white text-sm list-none text-center mb-[22px] font-montserrat md:text-base md:text-left"><a
+                                            href="/contactus"
+                                            class="text-sm text-center md:text-base md:text-left">Contact
+                                            Us</a>
+                                    </li>
+                                    <li
+                                        class="text-white text-sm list-none text-center mb-[22px] font-montserrat md:text-base md:text-left"><a
+                                            href="/faq"
+                                            class="text-sm text-center md:text-base md:text-left">FAQ</a>
+                                    </li>
+                                    <li
+                                        class="text-white text-sm list-none text-center mb-[22px] font-montserrat md:text-base md:text-left"><a
+                                            href="/refundpolicy"
+                                            class="text-sm text-center md:text-base md:text-left">Refund
+                                            Policy</a>
+                                    </li>
+                                    <li
+                                        class="text-white text-sm list-none text-center mb-[22px] font-montserrat md:text-base md:text-left"><a
+                                            href="/privacypolicy"
+                                            class="text-sm text-center md:text-base md:text-left">Privacy
+                                            Policy</a>
+                                    </li>
+                                    <li
+                                        class="text-white text-sm list-none text-center mb-[22px] font-montserrat md:text-base md:text-left"><a
+                                            href="/termsconditions"
+                                            class="text-sm text-center md:text-base md:text-left">Terms
+                                            and Conditions</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div
+                                class="relative min-h-0 min-w-0 w-auto pb-[5px] md:min-h-[auto] md:min-w-[auto] md:w-3/12 md:pb-5"><ul
+                                    class="my-4 pl-0"><li
+                                        class="text-white text-base font-bold list-none text-center pb-[27px] font-montserrat md:text-xl md:text-left">Send
+                                        us a message</li>
+                                    <form><input type="email"
+                                            placeholder="Email" name="email"
+                                            value
+                                            class="text-white text-[13.3333px] bg-transparent box-border block w-6/12 mb-2.5 mx-auto px-[15px] py-2.5 rounded-[10px] border-solid border-white font-arial md:w-full md:mx-0" />
+                                        <textarea placeholder="Message"
+                                            name="message"
+                                            class="text-white text-[13.3333px] bg-transparent box-border block resize-y w-6/12 mb-2.5 mx-auto px-[15px] py-2.5 rounded-[10px] border-2 border-white font-monospace md:w-full md:mx-0"></textarea>
+                                        <button type="submit"
+                                            class="text-white font-semibold bg-green-600 block h-10 leading-[27px] text-center capitalize w-6/12 border-green-600 m-auto px-2.5 py-0 rounded-[10px] border-solid font-arial md:w-full md:m-0">send</button>
+                                    </form>
+                                    <div
+                                        class="text-center mt-5 md:text-start"><span
+                                            class="text-white text-sm text-center font-montserrat md:text-base md:text-start">Hotline:
+                                        </span>
+                                        <br class="text-center md:text-start" />
+                                        <span
+                                            class="text-white text-sm text-center font-montserrat md:text-base md:text-start"><a
+                                                href="tel://+2348090659966"
+                                                class="text-sm text-center md:text-base md:text-start">0809
+                                                065 9966</a>
+                                            ,<a href="tel://+2348090669966"
+                                                class="text-sm text-center md:text-base md:text-start">0809
+                                                066 9966</a>
+                                            ,<br
+                                                class="text-sm text-center md:text-base md:text-start" />
+                                            <a href="tel://+2348090789966"
+                                                class="text-sm text-center md:text-base md:text-start">0809
+                                                078 9966</a>
+                                        </span>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="block my-4 pl-0 md:hidden"><div
+                                class="w-fit m-auto md:w-auto md:m-0"><img
+                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/quickteller_icon.81952b63040ee408ef8b.png"
+                                    alt="quickteller"
+                                    class="aspect-[3_/_2] object-contain w-[100px] m-auto md:aspect-[4_/_2] md:w-2/5 md:m-0" />
+                                <img
+                                    src="https://c.animaapp.com/me4se9evUuDOyB/assets/nlrc_logo.31a439998d2d54688586.png"
+                                    alt="nlrc_logo"
+                                    class="aspect-[3_/_2] object-contain w-[100px] ml-2.5 mr-auto my-auto md:aspect-[4_/_2] md:w-2/5 md:m-0" />
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="bg-black h-fit py-0 md:h-auto md:py-[30px]"><div
+                            class="w-[95%] mx-auto md:w-[90%]"><div
+                                class="content-center items-center block justify-between justify-items-center list-none text-center py-5 md:flex md:text-start md:py-0"><span
+                                    class="text-white text-xs font-medium inline leading-[0px] min-h-0 min-w-0 text-center font-montserrat md:block md:leading-[normal] md:min-h-[auto] md:min-w-[auto] md:text-start">Copyright
+                                    © 2025 National Lottery Nigeria. All Rights
+                                    Reserved.</span>
+                                <span
+                                    class="text-lime-400 text-xl block min-h-0 min-w-0 text-center break-keep mt-5 font-montserrat md:text-3xl md:min-h-[auto] md:min-w-[auto] md:text-start md:mt-0">Game
+                                    Responsibly</span>
+                                <div
+                                    class="text-white content-center items-center self-center block h-fit justify-between justify-items-center min-h-0 min-w-0 text-center w-full mt-[22px] mb-auto mx-auto md:flex md:min-h-[auto] md:min-w-[auto] md:text-start md:w-[180px] md:m-0"><a
+                                        href="https://web.facebook.com/nationallotteryng"
+                                        class="text-3xl inline min-h-0 min-w-0 text-center md:text-[25px] md:block md:min-h-[auto] md:min-w-[auto] md:text-start"><img
+                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/icon-5.svg"
+                                            alt="Icon"
+                                            class="text-3xl inline-block h-[30px] text-center md:text-[25px] md:h-[25px] md:text-start" />
+                                    </a>
+                                    <a
+                                        href="https://www.instagram.com/nationallotteryng/"
+                                        class="text-3xl inline min-h-0 min-w-0 text-center ml-[50px] md:text-[25px] md:block md:min-h-[auto] md:min-w-[auto] md:text-start md:ml-0"><img
+                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/icon-6.svg"
+                                            alt="Icon"
+                                            class="text-3xl inline-block h-[30px] text-center md:text-[25px] md:h-[25px] md:text-start" />
+                                    </a>
+                                    <a
+                                        href="https://youtube.com/@nationallotterynigeria"
+                                        class="text-3xl inline min-h-0 min-w-0 text-center ml-[50px] md:text-[25px] md:block md:min-h-[auto] md:min-w-[auto] md:text-start md:ml-0"><img
+                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/icon-7.svg"
+                                            alt="Icon"
+                                            class="text-3xl inline-block h-[30px] text-center md:text-[25px] md:h-[25px] md:text-start" />
+                                    </a>
+                                    <a href="https://twitter.com/NatLotteryNG"
+                                        class="text-3xl inline min-h-0 min-w-0 text-center ml-[50px] md:text-[25px] md:block md:min-h-[auto] md:min-w-[auto] md:text-start md:ml-0"><img
+                                            src="https://c.animaapp.com/me4se9evUuDOyB/assets/icon-8.svg"
+                                            alt="Icon"
+                                            class="text-3xl inline-block h-[30px] text-center md:text-[25px] md:h-[25px] md:text-start" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div></div>
+        <div
+            class="fixed max-h-[60px] w-[60px] z-[2147483647] right-2.5 bottom-2.5"><div
+                class="box-border inline-block"><div
+                    class="relative text-sm bg-sky-600 box-border inline-block h-[60px] leading-[14px] align-middle w-[60px] p-[3px] rounded-[60px]"><em
+                        class="relative box-border inline-block h-full text-center w-full overflow-hidden rounded-[60px] before:accent-auto before:text-white before:text-[27px] before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[60px] before:list-outside before:list-disc before:text-center before:indent-[0px] before:normal-case before:visible before:z-[1111] before:m-auto before:border-separate before:font-siq"></em>
+                    <em
+                        class="absolute text-white text-[11px] bg-red-600 box-border hidden h-[22px] left-[-5px] leading-[22px] text-center top-[-5px] w-[22px] overflow-hidden rounded-[25px]"></em>
+                    <em
+                        class="absolute text-white text-[11px] bg-red-600 box-border hidden h-[22px] left-[-5px] leading-[22px] text-center top-[-5px] w-[22px] overflow-hidden rounded-[25px] before:accent-auto before:items-center before:bg-red-600/40 before:text-white before:flex before:text-[8px] before:not-italic before:normal-nums before:font-normal before:h-full before:justify-center before:tracking-[normal] before:leading-[8px] before:list-outside before:list-disc before:absolute before:text-center before:indent-[0px] before:normal-case before:visible before:w-full before:rounded-[100%] before:border-separate before:left-0 before:font-siq after:accent-auto after:bg-black/30 after:text-neutral-400 after:block after:text-[11px] after:not-italic after:normal-nums after:font-normal after:h-full after:tracking-[normal] after:leading-[11px] after:list-outside after:list-disc after:absolute after:text-center after:indent-[0px] after:normal-case after:visible after:w-full after:rounded-[100%] after:border-separate after:left-0 after:top-0 after:font-siq"></em>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
