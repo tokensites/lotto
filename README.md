@@ -1,0 +1,2 @@
+# lotto
+nigerian lotto
